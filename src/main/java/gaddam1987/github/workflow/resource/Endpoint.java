@@ -1,6 +1,7 @@
 package gaddam1987.github.workflow.resource;
 
 import org.joda.time.DateTime;
+import org.joda.time.chrono.StrictChronology;
 import org.joda.time.format.DateTimeFormatter;
 import org.joda.time.format.ISODateTimeFormat;
 
@@ -11,5 +12,9 @@ public class Endpoint {
         DateTime dt = new DateTime();
         DateTimeFormatter fmt = ISODateTimeFormat.dateTime();
         return fmt.print(dt);
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
